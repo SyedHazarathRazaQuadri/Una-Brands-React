@@ -1,0 +1,26 @@
+.right_side_topnav .dropdown-menu[data-bs-popper]{
+    left: -1rem !important;
+}
+.right_part_nav{
+    margin-right: 1rem;
+    align-items: center;
+}
+.brand_logo img{
+    max-width: 200px;
+}
+.right_side_topnav_button{
+    height: 40px;
+    text-wrap: nowrap;
+    border: 0.1px solid gray;
+    margin-right: 2rem;
+    border-radius: 8px;
+    background: #0025FF;
+}
+.right_side_topnav_button a{
+    color: white;
+}
+@media (max-width: 991px) {
+    .right_part_nav, .right_side_topnav_button{
+        margin: 0;
+    }
+}
