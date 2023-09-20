@@ -4,13 +4,20 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Form from 'react-bootstrap/Form';
+import { useTranslation } from 'react-i18next';
+import i18n from '../../i18n';
 import NavStyles from './topnavbar.module.scss';
 
 
 function TopNavbar() {
+    const { t } = useTranslation();
+
+    const handleLanguageChange = (event) => {
+      i18n.changeLanguage(event.target.value);
+    };
     return (
         <div>
-            <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
+            <Navbar collapseOnSelect expand="lg">
                 <Container>
                     <Navbar.Brand className={NavStyles.brand_logo} href="#home"><img src='../images/Una-Brands-Logo.png'/></Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -30,10 +37,10 @@ function TopNavbar() {
                         </Nav>
                         <Nav className={NavStyles.right_part_nav}>
                             <button className={NavStyles.right_side_topnav_button}><Nav.Link href="#deets">Get A Valuation</Nav.Link></button>
-                            <Form.Select aria-label="Default select example" className={NavStyles.right_side_topnav}>
-                                <option value="1">English</option>
-                                <option value="2">Indonesian</option>
-                                <option value="3">Chinese</option>
+                            <Form.Select aria-label="Default select example" className={NavStyles.right_side_topnav} onChange={handleLanguageChange}>
+                                <option value="en">English</option>
+                                <option value="id">Indonesian</option>
+                                <option value="cn">Chinese</option>
                             </Form.Select>
                         </Nav>
                     </Navbar.Collapse>

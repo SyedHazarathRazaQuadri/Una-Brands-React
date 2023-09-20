@@ -1,0 +1,73 @@
+.main_container > div{
+    justify-content: center;
+    align-items: center;
+
+    h1{
+        font-size: 75px;
+        font-weight: bold;
+        color: #4C4C4C;
+        text-align: left;
+        margin-left: 5rem;
+    }
+    p.left_para{
+        font-size: 18px;
+        color: #4C4C4C;
+        margin: 1rem 6rem 1rem 5rem;
+        text-align: left;
+    }
+    .two_buttons{
+        text-align: left;
+        margin-left: 4.7rem;
+    }
+    button{
+        background: #0025FF;
+        border-radius: 10px;
+        color: wheat;
+        border: none;
+        padding: 10px 20px;
+        margin: 0 5px;
+    }
+    button:last-child{
+        background-color: #0095FF;
+    }
+    button:hover{
+        background: no-repeat padding-box border-box 50%/cover scroll url(https://static.wixstatic.com/media/c4c214_1af68e7fc0194ea3bc1dd84973a3c111~mv2.png/v1/fill/w_180,h_44,al_c/c4c214_1af68e7fc0194ea3bc1dd84973a3c111~mv2.png?formatterValues=c4c214_1af68e7fc0194ea3bc1dd84973a3c111~mv2.png,180,44,180,44);
+    }
+    .right_revenue_content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 273px;
+        height: 331px;
+        padding: 12px;
+        text-align: left;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 0 0 50% 50%;
+        background-color: #0044FF;
+        color: white;
+        p.catefory{
+            font-size: 16px;
+            color: #2FFDD4;
+        }
+        h6{
+            font-size: 16px;
+            padding-left: 16px;
+        }
+        span{
+            padding-left: 12rem;
+            font-size: 15px;
+            color: #2FFDD4;
+        }
+        h3{
+            padding-left: 16px;
+            font-weight: bold;
+            font-size: 32px;
+        }
+        p{
+            font-size: 13px;
+            text-align: justify;
+            padding: 0 16px;
+        }
+    }
+}

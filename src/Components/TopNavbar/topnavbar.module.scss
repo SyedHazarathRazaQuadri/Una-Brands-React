@@ -16,6 +16,12 @@
     border-radius: 8px;
     background: #0025FF;
 }
+.right_side_topnav_button:hover{
+    background: no-repeat padding-box border-box 50%/cover scroll url(https://static.wixstatic.com/media/c4c214_1af68e7fc0194ea3bc1dd84973a3c111~mv2.png/v1/fill/w_180,h_44,al_c/c4c214_1af68e7fc0194ea3bc1dd84973a3c111~mv2.png?formatterValues=c4c214_1af68e7fc0194ea3bc1dd84973a3c111~mv2.png,180,44,180,44);
+}
+.right_side_topnav_button a:hover{
+    color: white;
+}
 .right_side_topnav_button a{
     color: white;
 }

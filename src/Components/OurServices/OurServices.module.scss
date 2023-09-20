@@ -1,0 +1,23 @@
+.service_heading{
+    font-size: 35px;
+    font-weight: lighter;
+    margin: 1rem 11rem 1rem 5.5rem;
+    text-align: left;
+}
+.logo_text_row{
+    align-items: center;
+    padding-bottom: 4rem;
+}
+.logo_with_content{
+    img{
+        max-width: 100px;
+        padding-bottom: 1rem;
+    }
+    P{
+        max-width: 235px;
+        margin: auto;
+        text-align: justify;
+        font-size: 18px;
+        color: #4C4C4C;
+    }
+}
